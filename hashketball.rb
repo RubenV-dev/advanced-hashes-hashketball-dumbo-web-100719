@@ -234,6 +234,7 @@ def big_shoe_rebounds
         end
         memo
         p memo
+        p shoe_size
       
       end
     end
