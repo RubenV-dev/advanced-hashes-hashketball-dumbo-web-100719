@@ -291,6 +291,6 @@ def winning_team
     end
     end
   end
-  p brookyln_score
+  p brooklyn_score
   p charlotte_score
 end
