@@ -240,8 +240,10 @@ def big_shoe_rebounds
   game_hash.each do |location, location_hash|
     playas = location_hash[:players]
     playas.each do |name_hash|
-      p name_hash
-      #return name_hash["${largest_name}"][:rebounds]
+      name_hash.each do |name, stats|
+        p name
+        p stats
+    end
     end
   end
    
