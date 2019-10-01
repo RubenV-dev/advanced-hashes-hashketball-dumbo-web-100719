@@ -299,12 +299,18 @@ end
 end
 
 def player_with_longest_name
+  counter = 0
+  largest_name = ""
   game_hash.each do |location, location_hash|
     playas = location_hash[:players]
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
-        p name
+        if name.length > counter
+          counter = name.length
+          largest_name = name
+        end
       end
     end
   end
+  largest_name
 end
