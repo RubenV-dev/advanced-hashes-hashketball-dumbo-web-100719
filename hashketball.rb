@@ -230,7 +230,7 @@ def big_shoe_rebounds
       name_hash.reduce(0) do |memo, (name, stat_hash)|
         p memo
         p name
-        p stat_value
+        p stat_hash
       
       end
     end
