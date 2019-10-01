@@ -297,3 +297,14 @@ else
   return "Charlotte Hornets"
 end
 end
+
+def player_with_longest_name
+  game_hash.each do |location, location_hash|
+    playas = location_hash[:players]
+    playas.each do |name_hash|
+      name_hash.each do |(name, stat_hash)|
+        p name
+      end
+    end
+  end
+end
