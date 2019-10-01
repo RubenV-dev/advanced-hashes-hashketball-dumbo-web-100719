@@ -291,6 +291,9 @@ def winning_team
     end
     end
   end
-  p brooklyn_score
-  p charlotte_score
+  if brooklyn_score > charlotte_score
+  return "Brooklyn Nets"
+else
+  return "Charlotte Hornets"
+end
 end
