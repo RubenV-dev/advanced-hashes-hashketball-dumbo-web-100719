@@ -268,8 +268,8 @@ end
 
 def winning_team 
   game_hash.each do |location, location_hash|
-    p location
-    p location_hash
+    teams = location_hash[:team_name]
+    p teams
     playas = location_hash[:players]
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
