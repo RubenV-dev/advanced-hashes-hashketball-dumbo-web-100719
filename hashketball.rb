@@ -277,7 +277,7 @@ def winning_team
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
         scores = stat_hash[:points]
-         p stat_hash
+         p scores
         
       end
     end
