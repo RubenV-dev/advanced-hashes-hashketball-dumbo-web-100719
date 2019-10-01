@@ -267,12 +267,16 @@ def most_points_scored
 end
 
 def winning_team 
+  brooklyn_score = 0
+  charlotte_score = 0
   game_hash.each do |location, location_hash|
-    teams = location_hash[:team_name]
-    p teams
+    team = location_hash[:team_name]
+    
     playas = location_hash[:players]
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
+        p name
+        p stat_hash
       end
     end
   end
