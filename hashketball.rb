@@ -230,7 +230,12 @@ def big_shoe_rebounds
     playas.each do |name_hash|
       name_hash.each do |name, stat_hash|
         shoes = stat_hash[:shoe]
-        p shoes
+        shoes.reduce(0) do |memo, shoe_sizes|
+          if shoe_sizes > memo
+            memo = shoe_sizes
+          end
+          memo
+          p memo
       end
     end
   end
