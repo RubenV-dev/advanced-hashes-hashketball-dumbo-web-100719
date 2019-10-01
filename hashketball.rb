@@ -227,9 +227,10 @@ def big_shoe_rebounds
   game_hash.each do |location, location_hash|
     playas = location_hash[:players]
     playas.each do |name_hash|
-      name_hash.each do |name, stat_hash|
-        shoes = stat_hash[:shoe]
-        p shoes
+      name_hash.reduce do |memo, (name, stat_hash)|
+        shoe_size = stat_hash[:shoe]
+        p memo
+        p shoe_size
       
       end
     end
