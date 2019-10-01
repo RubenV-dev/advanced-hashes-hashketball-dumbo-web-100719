@@ -278,11 +278,19 @@ def winning_team
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
         scores = stat_hash[:points]
-         p scores
-        
+         brooklyn_score += scores
       end
     end
     end
-  
+    if team == "Charlotte Hornets"
+    playas.each do |name_hash|
+      name_hash.each do |(name, stat_hash)|
+        scores = stat_hash[:points]
+         charlotte_score += scores
+       end
+    end
+    end
   end
+  p brookyln_score
+  p charlotte_score
 end
