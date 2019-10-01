@@ -234,16 +234,8 @@ def big_shoe_rebounds
           largest_shoe = shoe_size
           largest_name = name
         end
-        #large = stat_hash.reduce(0) do |memo, (key, value)|
-          #if shoe_size > memo
-           # memo = shoe_size
-          #end
-          #memo
-       # end
-       # p large
       end
     end
   end
-   p largest_shoe
-   p largest_name
+   
 end
