@@ -270,12 +270,13 @@ def winning_team
   brooklyn_score = 0
   charlotte_score = 0
   game_hash.each do |location, location_hash|
+    p location_hash
     team = location_hash[:team_name]
     
     playas = location_hash[:players]
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
-        p name
+        
       end
     end
   end
