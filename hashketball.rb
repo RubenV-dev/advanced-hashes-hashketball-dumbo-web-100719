@@ -231,6 +231,7 @@ def big_shoe_rebounds
         stat_hash.reduce(0) do |memo, (key, value)|
           memo = memo + 1
           memo
+          p memo
         end
       
       end
