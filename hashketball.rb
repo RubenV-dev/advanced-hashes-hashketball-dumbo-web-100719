@@ -241,8 +241,9 @@ def big_shoe_rebounds
     playas = location_hash[:players]
     playas.each do |name_hash|
       name_hash.each do |name, stats|
-        p name
-        p stats
+        if name == largest_name
+          return name_hash[name][:rebounds]
+        end
     end
     end
   end
