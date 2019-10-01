@@ -272,8 +272,9 @@ def winning_team
   game_hash.each do |location, location_hash|
     
     team = location_hash[:team_name]
-    
     playas = location_hash[:players]
+    
+    if team = "Brooklyn Nets"
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
         scores = stat_hash[:points]
@@ -281,5 +282,7 @@ def winning_team
         
       end
     end
+    end
+  
   end
 end
