@@ -224,6 +224,7 @@ end
 
 def big_shoe_rebounds
   largest_shoe = 0
+  largest_name = ""
   game_hash.each do |location, location_hash|
     playas = location_hash[:players]
     playas.each do |name_hash|
@@ -231,6 +232,7 @@ def big_shoe_rebounds
         shoe_size = stat_hash[:shoe]
         if shoe_size > largest_shoe
           largest_shoe = shoe_size
+          largest_name = name
         end
         #large = stat_hash.reduce(0) do |memo, (key, value)|
           #if shoe_size > memo
@@ -243,4 +245,5 @@ def big_shoe_rebounds
     end
   end
    p largest_shoe
+   p largest_name
 end
