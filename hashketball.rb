@@ -267,5 +267,13 @@ def most_points_scored
 end
 
 def winning_team 
-  
+  game_hash.each do |location, location_hash|
+    p location
+    p location_hash
+    playas = location_hash[:players]
+    playas.each do |name_hash|
+      name_hash.each do |(name, stat_hash)|
+      end
+    end
+  end
 end
