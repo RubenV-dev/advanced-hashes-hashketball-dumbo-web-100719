@@ -231,6 +231,7 @@ def big_shoe_rebounds
       name_hash.each do |name, stat_hash|
         p name
         p stat_hash
+      end
     end
   end
 end
