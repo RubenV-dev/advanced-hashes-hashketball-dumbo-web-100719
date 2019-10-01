@@ -236,6 +236,7 @@ def big_shoe_rebounds
           end
           memo
           p memo
+        end
       end
     end
   end
