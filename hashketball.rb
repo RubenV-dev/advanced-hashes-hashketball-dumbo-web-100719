@@ -233,7 +233,6 @@ def big_shoe_rebounds
           memo = shoe_size
         end
         memo
-        p memo
         p shoe_size
       
       end
