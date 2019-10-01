@@ -256,12 +256,12 @@ def most_points_scored
     playas = location_hash[:players]
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
-        p stat_hash
-        # if shoe_size > largest_shoe
-        #   largest_shoe = shoe_size
-        #   largest_name = name
-        # end
+        if stat_hash[:points] > largest_score
+          largest_score = stat_hash[:points]
+          scorer_name = name
+        end
       end
     end
   end
+  scorer_name
 end
