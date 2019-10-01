@@ -317,5 +317,23 @@ end
 
 def long_name_steals_a_ton?
   long_name = player_with_longest_name
-  p long_name
+  
+  largest_steal = 1
+  stealer_name = ""
+  game_hash.each do |location, location_hash|
+    playas = location_hash[:players]
+    playas.each do |name_hash|
+      name_hash.each do |(name, stat_hash)|
+        if stat_hash[:steals] > largest_steal
+          largest_score = stat_hash[:steals]
+          stealer_name = name
+        end
+      end
+    end
+  end
+  if long_name == stealer_name
+    return true
+  else
+    return false
+  end
 end
