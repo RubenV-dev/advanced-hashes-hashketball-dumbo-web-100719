@@ -325,7 +325,7 @@ def long_name_steals_a_ton?
     playas.each do |name_hash|
       name_hash.each do |(name, stat_hash)|
         if stat_hash[:steals] > largest_steal
-          largest_score = stat_hash[:steals]
+          largest_steal = stat_hash[:steals]
           stealer_name = name
         end
       end
